@@ -1,10 +1,15 @@
 import { memo } from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "@/store/store";
 import { infos } from "@/data/portfolio";
 import { Github, Linkedin, Mail, Phone } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Hero = memo(() => {
-  const { hero } = infos;
+  const currentLanguage = useSelector(
+    (state: RootState) => state.language.currentLanguage
+  );
+  const { hero } = infos(currentLanguage);
 
   return (
     <section className="min-h-[90vh] flex items-center justify-center px-4 py-12">
