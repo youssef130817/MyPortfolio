@@ -49,10 +49,10 @@ const translations: Record<"en" | "fr", PortfolioData> = {
       }
     },
     competences: {
-      languages: ["Java", "JavaScript", "TypeScript", "C#", "Dart", "PFIP"],
-      frameworks: ["Spring", "React Js", "Node Js", "Laravel", "Flutter", "Dotnet"],
-      databases: ["MySQL", "Postgres", "MongoDB", "Neo4j", "Firebase", "Oracle"],
-      outils: ["Git", "Docker", "UML", "Microservices"],
+      languages: ["Java", "JavaScript", "TypeScript", "C#", "Dart", "Python", "PLSQL"],
+      frameworks: ["Spring", "React.js", "Node.js", "Laravel", "Flutter", "Nest.js", "React Native", ".NET", "Flask"],
+      databases: ["MySQL", "PostgreSQL", "MongoDB", "Neo4j", "Firebase", "Oracle", "Redis", "SQL Server"],
+      outils: ["Git", "Docker", "UML", "Microservices", "Kafka", "REST API", "Websockets", "OCR", "RoBERTa"],
       softSkills: [
         "Problem Solving",
         "Team Collaboration",
@@ -75,13 +75,31 @@ const translations: Record<"en" | "fr", PortfolioData> = {
       {
         titre: "FlashDeals",
         description: "Mobile application for geolocated promotion recommendations, featuring real-time updates and personalized offers based on user location and preferences. Implemented with a microservices architecture for scalability.",
-        techs: ["Flutter", "Spring", "MongoDB", "Postgres", "Microservices", "Websockets", "REST API", "Git", "Docker"],
-        periode: "Sept 2024 - Present"
+        techs: ["Flutter", "Spring", "MongoDB", "PostgreSQL", "Microservices", "Websockets", "REST API", "Git", "Docker"],
+        periode: "Sept 2024 - January 2025"
+      },
+      {
+        titre: "Tasky",
+        description: "A mobile application for task management with geolocation for users and tasks, featuring a user-friendly interface. The app allows users to track tasks and team members in real-time with location-based features.",
+        techs: ["Nest.js", "React Native", "Firebase", "PostgreSQL", "Docker", "Git"],
+        periode: "October 2024 - February 2025"
+      },
+      {
+        titre: "E-commerce Microservices",
+        description: "A scalable e-commerce platform built with microservices architecture, featuring real-time inventory management, distributed caching, and event-driven communication between services.",
+        techs: [".NET", "Redis", "PostgreSQL", "MongoDB", "SQL Server", "Docker", "Git", "Kafka"],
+        periode: "October 2024 - January 2025"
+      },
+      {
+        titre: "Autocorrect",
+        description: "A prototype platform for automatic paper exam correction using the RoBERTa model and OCR technology. The system streamlines the grading process by digitizing and analyzing handwritten exams.",
+        techs: ["Flask", "MongoDB", "React.js", "RoBERTa", "OCR"],
+        periode: "August 2024 - December 2024"
       },
       {
         titre: "Busway Reservation System",
         description: "Real-time bus reservation web application with live tracking and automated seat allocation. Built with a microservices architecture to handle high concurrent user requests efficiently.",
-        techs: ["Spring Boot", "ReactJs", "Microservices", "Websockets", "REST API", "Git", "Docker"],
+        techs: ["Spring", "React.js", "Microservices", "Websockets", "REST API", "Git", "Docker"],
         periode: "Feb 2024 - Mar 2024"
       }
     ],
@@ -110,10 +128,10 @@ const translations: Record<"en" | "fr", PortfolioData> = {
       }
     },
     competences: {
-      languages: ["Java", "JavaScript", "TypeScript", "C#", "Dart", "PFIP"],
-      frameworks: ["Spring", "React Js", "Node Js", "Laravel", "Flutter", "Dotnet"],
-      databases: ["MySQL", "Postgres", "MongoDB", "Neo4j", "Firebase", "Oracle"],
-      outils: ["Git", "Docker", "UML", "Microservices"],
+      languages: ["Java", "JavaScript", "TypeScript", "C#", "Dart", "Python", "PLSQL"],
+      frameworks: ["Spring", "React.js", "Node.js", "Laravel", "Flutter", "Nest.js", "React Native", ".NET", "Flask"],
+      databases: ["MySQL", "PostgreSQL", "MongoDB", "Neo4j", "Firebase", "Oracle", "Redis", "SQL Server"],
+      outils: ["Git", "Docker", "UML", "Microservices", "Kafka", "REST API", "Websockets", "OCR", "RoBERTa"],
       softSkills: [
         "Résolution de problèmes",
         "Travail d'équipe",
@@ -136,13 +154,31 @@ const translations: Record<"en" | "fr", PortfolioData> = {
       {
         titre: "FlashDeals",
         description: "Application mobile de recommandation de promotions géolocalisées, avec des mises à jour en temps réel et des offres personnalisées en fonction de la localisation et des préférences de l'utilisateur. Implémenté avec une architecture de microservices pour la scalabilité.",
-        techs: ["Flutter", "Spring", "MongoDB", "Postgres", "Microservices", "Websockets", "REST API", "Git", "Docker"],
-        periode: "Sept 2024 - Présent"
+        techs: ["Flutter", "Spring", "MongoDB", "PostgreSQL", "Microservices", "Websockets", "REST API", "Git", "Docker"],
+        periode: "Sept 2024 - Janvier 2025"
+      },
+      {
+        titre: "Tasky",
+        description: "Une application mobile de gestion des tâches avec géolocalisation pour les utilisateurs et les tâches, dotée d'une interface conviviale. L'application permet de suivre les tâches et les membres de l'équipe en temps réel avec des fonctionnalités basées sur la localisation.",
+        techs: ["Nest.js", "React Native", "Firebase", "PostgreSQL", "Docker", "Git"],
+        periode: "Octobre 2024 - Février 2025"
+      },
+      {
+        titre: "E-commerce Microservices",
+        description: "Une plateforme e-commerce évolutive construite avec une architecture microservices, comprenant la gestion des stocks en temps réel, la mise en cache distribuée et la communication événementielle entre les services.",
+        techs: [".NET", "Redis", "PostgreSQL", "MongoDB", "SQL Server", "Docker", "Git", "Kafka"],
+        periode: "Octobre 2024 - Janvier 2025"
+      },
+      {
+        titre: "Autocorrect",
+        description: "Un prototype de plateforme pour la correction automatique des examens papier à l'aide du modèle RoBERTa et de la technologie OCR. Le système simplifie le processus de notation en numérisant et en analysant les examens manuscrits.",
+        techs: ["Flask", "MongoDB", "React.js", "RoBERTa", "OCR"],
+        periode: "Août 2024 - Décembre 2024"
       },
       {
         titre: "Système de Réservation Busway",
         description: "Application web de réservation de bus en temps réel avec suivi en direct et allocation automatique de sièges. Construit avec une architecture de microservices pour gérer efficacement les requêtes utilisateur concurrentes élevées.",
-        techs: ["Spring Boot", "ReactJs", "Microservices", "Websockets", "REST API", "Git", "Docker"],
+        techs: ["Spring", "React.js", "Microservices", "Websockets", "REST API", "Git", "Docker"],
         periode: "Fév 2024 - Mar 2024"
       }
     ],
