@@ -1,9 +1,14 @@
 import { memo } from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "@/store/store";
 import { infos } from "@/data/portfolio";
 import { Card, CardContent } from "./ui/card";
 
 const Skills = memo(() => {
-  const { competences } = infos;
+  const currentLanguage = useSelector(
+    (state: RootState) => state.language.currentLanguage
+  );
+  const { competences } = infos(currentLanguage);
 
   return (
     <section className="py-20 px-4">

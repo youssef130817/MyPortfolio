@@ -1,10 +1,15 @@
 import { memo } from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "@/store/store";
 import { infos } from "@/data/portfolio";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { GraduationCap } from "lucide-react";
 
 const Education = memo(() => {
-  const { formations } = infos;
+  const currentLanguage = useSelector(
+    (state: RootState) => state.language.currentLanguage
+  );
+  const { formations } = infos(currentLanguage);
 
   return (
     <section className="py-20 px-4">
