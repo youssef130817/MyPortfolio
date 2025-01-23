@@ -4,12 +4,14 @@ import { Button } from "./ui/button";
 import { RootState } from "@/store/store";
 import { toggleLanguage } from "@/store/languageSlice";
 import { Languages } from "lucide-react";
+import { translations } from "@/data/translations";
 
 const LanguageToggle = memo(() => {
   const dispatch = useDispatch();
   const currentLanguage = useSelector(
     (state: RootState) => state.language.currentLanguage
   );
+  const t = translations[currentLanguage];
 
   return (
     <Button
@@ -20,7 +22,7 @@ const LanguageToggle = memo(() => {
     >
       <Languages className="h-6 w-6" />
       <span className="sr-only">
-        {currentLanguage === "en" ? "Switch to French" : "Switch to English"}
+        {currentLanguage === "en" ? t.buttons.switchToFrench : t.buttons.switchToEnglish}
       </span>
     </Button>
   );
