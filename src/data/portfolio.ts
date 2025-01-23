@@ -1,4 +1,41 @@
-const translations = {
+type PortfolioData = {
+  hero: {
+    title: string;
+    subtitle: string;
+    contacts: {
+      phone: string;
+      email: string;
+      github: string;
+      linkedin: string;
+    };
+  };
+  competences: {
+    languages: string[];
+    frameworks: string[];
+    databases: string[];
+    outils: string[];
+  };
+  experiences: Array<{
+    poste: string;
+    entreprise: string;
+    date: string;
+    description: string;
+    techs: string[];
+  }>;
+  projets: Array<{
+    titre: string;
+    description: string;
+    techs: string[];
+    periode: string;
+  }>;
+  formations: Array<{
+    diplome: string;
+    ecole: string;
+    periode: string;
+  }>;
+};
+
+const translations: Record<"en" | "fr", PortfolioData> = {
   en: {
     hero: {
       title: "Software Engineering Student",
@@ -107,4 +144,4 @@ const translations = {
   }
 };
 
-export const infos = (language: "en" | "fr") => translations[language];
+export const infos = (language: "en" | "fr"): PortfolioData => translations[language];

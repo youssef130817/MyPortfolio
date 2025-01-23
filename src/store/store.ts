@@ -7,6 +7,11 @@ export const store = configureStore({
     theme: themeReducer,
     language: languageReducer,
   },
+  preloadedState: {
+    language: {
+      currentLanguage: "en"
+    }
+  }
 });
 
 export type RootState = ReturnType<typeof store.getState>;
