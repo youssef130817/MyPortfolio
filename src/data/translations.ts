@@ -1,56 +1,44 @@
 export const translations = {
   en: {
+    downloadCV: "Download CV",
     sections: {
       skills: {
         title: "Skills",
-        subtitle: "Here are the technologies and tools I work with"
+        subtitle: "Technologies and tools I work with"
       },
       experience: {
         title: "Experience",
         subtitle: "My professional journey"
       },
+      projects: {
+        title: "Projects",
+        subtitle: "Some of my recent work"
+      },
       education: {
         title: "Education",
         subtitle: "My academic background"
-      },
-      projects: {
-        title: "Projects",
-        subtitle: "Here are some of my recent projects"
       }
-    },
-    buttons: {
-      switchToFrench: "Switch to French",
-      switchToEnglish: "Switch to English",
-      github: "GitHub",
-      linkedin: "LinkedIn"
     }
   },
   fr: {
+    downloadCV: "Télécharger CV",
     sections: {
       skills: {
         title: "Compétences",
-        subtitle: "Voici les technologies et outils avec lesquels je travaille"
+        subtitle: "Technologies et outils avec lesquels je travaille"
       },
       experience: {
         title: "Expérience",
         subtitle: "Mon parcours professionnel"
       },
+      projects: {
+        title: "Projets",
+        subtitle: "Quelques-uns de mes travaux récents"
+      },
       education: {
         title: "Formation",
         subtitle: "Mon parcours académique"
-      },
-      projects: {
-        title: "Projets",
-        subtitle: "Voici quelques-uns de mes projets récents"
       }
-    },
-    buttons: {
-      switchToFrench: "Passer en Français",
-      switchToEnglish: "Passer en Anglais",
-      github: "GitHub",
-      linkedin: "LinkedIn"
     }
   }
-} as const;
-
-export type Language = keyof typeof translations;
+};

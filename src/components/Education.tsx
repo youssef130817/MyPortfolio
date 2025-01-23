@@ -14,7 +14,7 @@ const Education = memo(() => {
   const t = translations[currentLanguage];
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-4 bg-[#FDE1D3]/30">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">{t.sections.education.title}</h2>
@@ -22,12 +22,12 @@ const Education = memo(() => {
         </div>
         <div className="space-y-6">
           {formations.map((formation, index) => (
-            <Card key={index} className="relative">
+            <Card key={index} className="relative border-primary/20">
               <div className="absolute -left-3 top-6 w-6 h-6 bg-primary rounded-full flex items-center justify-center">
                 <GraduationCap className="w-4 h-4 text-primary-foreground" />
               </div>
               <CardHeader>
-                <CardTitle>{formation.diplome}</CardTitle>
+                <CardTitle className="text-primary">{formation.diplome}</CardTitle>
                 <div className="text-sm text-muted-foreground">
                   {formation.periode}
                 </div>

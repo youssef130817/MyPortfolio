@@ -13,7 +13,7 @@ const Skills = memo(() => {
   const t = translations[currentLanguage];
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-4 bg-[#F2FCE2]/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">{t.sections.skills.title}</h2>
@@ -23,17 +23,17 @@ const Skills = memo(() => {
           {Object.entries(competences).map(([category, skills]) => (
             <Card
               key={category}
-              className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-primary/20"
             >
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-4 capitalize">
+                <h3 className="text-xl font-semibold mb-4 capitalize text-primary">
                   {category}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {skills.map((skill) => (
                     <span
                       key={skill}
-                      className="px-3 py-1 bg-secondary rounded-full text-sm"
+                      className="px-3 py-1 bg-[#E5DEFF] text-primary rounded-full text-sm hover:bg-primary hover:text-white transition-colors"
                     >
                       {skill}
                     </span>

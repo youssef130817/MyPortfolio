@@ -15,7 +15,7 @@ const Experience = memo(() => {
   const t = translations[currentLanguage];
 
   return (
-    <section className="py-20 px-4 bg-secondary/20">
+    <section className="py-20 px-4 bg-[#FEF7CD]/30">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">{t.sections.experience.title}</h2>
@@ -23,12 +23,12 @@ const Experience = memo(() => {
         </div>
         <div className="space-y-6">
           {experiences.map((exp, index) => (
-            <Card key={index} className="relative">
+            <Card key={index} className="relative border-primary/20">
               <div className="absolute -left-3 top-6 w-6 h-6 bg-primary rounded-full flex items-center justify-center">
                 <Briefcase className="w-4 h-4 text-primary-foreground" />
               </div>
               <CardHeader>
-                <CardTitle>{exp.poste}</CardTitle>
+                <CardTitle className="text-primary">{exp.poste}</CardTitle>
                 <div className="text-sm text-muted-foreground">
                   {exp.entreprise} | {exp.date}
                 </div>
@@ -37,7 +37,11 @@ const Experience = memo(() => {
                 <p className="mb-4 text-muted-foreground">{exp.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {exp.techs.map((tech) => (
-                    <Badge key={tech} variant="secondary" className="rounded-full">
+                    <Badge
+                      key={tech}
+                      variant="secondary"
+                      className="bg-[#E5DEFF] hover:bg-primary text-primary hover:text-white"
+                    >
                       {tech}
                     </Badge>
                   ))}

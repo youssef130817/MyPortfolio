@@ -15,7 +15,7 @@ const Projects = memo(() => {
   const t = translations[currentLanguage];
 
   return (
-    <section className="py-20 px-4 bg-secondary/20">
+    <section className="py-20 px-4 bg-[#D3E4FD]/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">{t.sections.projects.title}</h2>
@@ -25,10 +25,10 @@ const Projects = memo(() => {
           {projets.map((project, index) => (
             <Card
               key={index}
-              className="group hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer"
+              className="group hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer border-primary/20"
             >
               <CardHeader>
-                <CardTitle className="flex items-center justify-between">
+                <CardTitle className="flex items-center justify-between text-primary">
                   {project.titre}
                   <ArrowUpRight className="opacity-0 group-hover:opacity-100 transition-opacity" />
                 </CardTitle>
@@ -45,7 +45,7 @@ const Projects = memo(() => {
                     <Badge
                       key={tech}
                       variant="secondary"
-                      className="rounded-full"
+                      className="bg-[#E5DEFF] hover:bg-primary text-primary hover:text-white"
                     >
                       {tech}
                     </Badge>
