@@ -2,17 +2,24 @@ import { memo } from "react";
 import { infos } from "@/data/portfolio";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
+import { Briefcase } from "lucide-react";
 
 const Experience = memo(() => {
   const { experiences } = infos;
 
   return (
-    <section className="py-20 px-4 bg-secondary/50">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">Expérience</h2>
+    <section className="py-20 px-4 bg-secondary/20">
+      <div className="max-w-3xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-4">Experience</h2>
+          <p className="text-muted-foreground">My professional journey</p>
+        </div>
         <div className="space-y-6">
           {experiences.map((exp, index) => (
-            <Card key={index}>
+            <Card key={index} className="relative">
+              <div className="absolute -left-3 top-6 w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+                <Briefcase className="w-4 h-4 text-primary-foreground" />
+              </div>
               <CardHeader>
                 <CardTitle>{exp.poste}</CardTitle>
                 <div className="text-sm text-muted-foreground">
@@ -20,10 +27,10 @@ const Experience = memo(() => {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="mb-4">{exp.description}</p>
+                <p className="mb-4 text-muted-foreground">{exp.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {exp.techs.map((tech) => (
-                    <Badge key={tech} variant="secondary">
+                    <Badge key={tech} variant="secondary" className="rounded-full">
                       {tech}
                     </Badge>
                   ))}
