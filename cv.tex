@@ -1,0 +1,261 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\usepackage{paracol}
+
+\iftutex
+  \setmainfont{Lato}
+\else
+  \usepackage[default]{lato}
+\fi
+
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\begin{document}
+
+% English Version
+\name{Youssef Kassimi}
+\tagline{Software Engineering Student}
+\photoR{2.8cm}{profile-picture}
+\personalinfo{%
+  \email{youssefkassimi669@gmail.com}
+  \phone{+212 767458578}
+  \github{youssef130817}
+  \linkedin{kassimi-youssef-dev}
+}
+
+\makecvheader
+
+\columnratio{0.6}
+\begin{paracol}{2}
+
+\cvsection{About Me}
+
+\cvevent{Enthusiastic software engineering student with a strong foundation in full-stack development. Currently seeking a 4-6 month end-of-study internship opportunity.}{}{}{}
+
+\cvsection{Experience}
+
+\cvevent{Software Engineering Intern}{AVL - End of Year Internship}{April 2024 -- July 2024}{}
+\begin{itemize}
+\item Development of 'HR 4 You', a single-page web application for AVL's HR department
+\item Implemented dynamic document generation from templates for all AVL collaborators
+\item Built interactive organizational chart visualization and automated email service
+\item Technologies: Laravel, Vue.js, MySQL, Git
+\end{itemize}
+
+\cvsection{Projects}
+
+\cvevent{FlashDeals}{Mobile Application}{Sept 2024 - January 2025}{}
+\begin{itemize}
+\item Built a geolocated promotion recommendations app with real-time updates
+\item Implemented microservices architecture for scalability
+\item Technologies: Flutter, Spring, MongoDB, PostgreSQL, Docker
+\end{itemize}
+
+\divider
+
+\cvevent{E-commerce Microservices}{Web Platform}{October 2024 - January 2025}{}
+\begin{itemize}
+\item Developed an e-commerce platform with microservices architecture
+\item Implemented real-time inventory management and distributed caching
+\item Technologies: .NET, Redis, PostgreSQL, MongoDB, Kafka
+\end{itemize}
+
+\divider
+
+\cvevent{Autocorrect}{AI Platform}{August 2024 - December 2024}{}
+\begin{itemize}
+\item Created a platform for automatic paper exam correction using AI
+\item Integrated OCR technology and RoBERTa model for text analysis
+\item Technologies: Flask, MongoDB, React.js
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Languages}
+\cvskill{Java}{5}
+\cvskill{JavaScript/TypeScript}{5}
+\cvskill{Python}{4}
+\cvskill{C\#}{4}
+\cvskill{Dart}{4}
+\cvskill{PLSQL}{3}
+
+\cvsection{Frameworks \& Tools}
+{\LaTeXraggedright
+\cvtag{Spring}
+\cvtag{React.js}
+\cvtag{Node.js}
+\cvtag{Laravel}
+\cvtag{Flutter}
+\cvtag{.NET}
+\cvtag{Flask}
+\par}
+
+\divider\smallskip
+
+{\LaTeXraggedright
+\cvtag{Docker}
+\cvtag{Git}
+\cvtag{Microservices}
+\cvtag{Kafka}
+\cvtag{REST API}
+\cvtag{OCR}
+\par}
+
+\cvsection{Databases}
+{\LaTeXraggedright
+\cvtag{MySQL}
+\cvtag{PostgreSQL}
+\cvtag{MongoDB}
+\cvtag{Redis}
+\cvtag{Oracle}
+\par}
+
+\cvsection{Soft Skills}
+{\LaTeXraggedright
+\cvtag{Problem Solving}
+\cvtag{Team Collaboration}
+\cvtag{Communication}
+\cvtag{Adaptability}
+\cvtag{Time Management}
+\par}
+
+\cvsection{Education}
+
+\cvevent{Software Engineering Degree}{Faculty of Sciences and Technologies of Mohammedia}{2022 -- Present}{}
+
+\divider
+
+\cvevent{CPGE Industrial Technologies}{Mohammed V Technical High School}{2019 -- 2021}{}
+
+\end{paracol}
+
+\newpage
+
+% French Version
+\name{Youssef Kassimi}
+\tagline{Élève Ingénieur en Génie Logiciel}
+\personalinfo{%
+  \email{youssefkassimi669@gmail.com}
+  \phone{+212 767458578}
+  \github{youssef130817}
+  \linkedin{kassimi-youssef-dev}
+}
+
+\makecvheader
+
+\columnratio{0.6}
+\begin{paracol}{2}
+
+\cvsection{À Propos de Moi}
+
+\cvevent{Étudiant passionné en génie logiciel avec une solide base en développement full-stack. Actuellement à la recherche d'un stage de fin d'études de 4 à 6 mois.}{}{}{}
+
+\cvsection{Expérience}
+
+\cvevent{Stagiaire en Ingénierie Logicielle}{AVL - Stage de Fin d'Année}{Avril 2024 -- Juillet 2024}{}
+\begin{itemize}
+\item Développement de 'HR 4 You', une application web monopage pour le département RH d'AVL
+\item Implémentation de la génération dynamique de documents à partir de modèles
+\item Création d'une visualisation interactive de l'organigramme et service d'emails automatisé
+\item Technologies : Laravel, Vue.js, MySQL, Git
+\end{itemize}
+
+\cvsection{Projets}
+
+\cvevent{FlashDeals}{Application Mobile}{Sept 2024 - Janvier 2025}{}
+\begin{itemize}
+\item Développement d'une application de recommandations de promotions géolocalisées
+\item Implémentation d'une architecture microservices pour la scalabilité
+\item Technologies : Flutter, Spring, MongoDB, PostgreSQL, Docker
+\end{itemize}
+
+\divider
+
+\cvevent{E-commerce Microservices}{Plateforme Web}{Octobre 2024 - Janvier 2025}{}
+\begin{itemize}
+\item Développement d'une plateforme e-commerce avec architecture microservices
+\item Gestion des stocks en temps réel et mise en cache distribuée
+\item Technologies : .NET, Redis, PostgreSQL, MongoDB, Kafka
+\end{itemize}
+
+\divider
+
+\cvevent{Autocorrect}{Plateforme Web}{Août 2024 - Décembre 2024}{}
+\begin{itemize}
+\item Plateforme de correction automatique d'examens utilisant l'IA
+\item Intégration OCR et RoBERTa pour l'analyse de texte
+\item Technologies : Flask, MongoDB, React.js
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Langages}
+\cvskill{Java}{5}
+\cvskill{JavaScript/TypeScript}{5}
+\cvskill{Python}{4}
+\cvskill{C\#}{4}
+\cvskill{Dart}{4}
+\cvskill{PLSQL}{3}
+
+\cvsection{Frameworks et Outils}
+{\LaTeXraggedright
+\cvtag{Spring}
+\cvtag{React.js}
+\cvtag{Node.js}
+\cvtag{Laravel}
+\cvtag{Flutter}
+\cvtag{.NET}
+\cvtag{Flask}
+\par}
+
+\divider\smallskip
+
+{\LaTeXraggedright
+\cvtag{Docker}
+\cvtag{Git}
+\cvtag{Microservices}
+\cvtag{Kafka}
+\cvtag{REST API}
+\cvtag{OCR}
+\par}
+
+\cvsection{Bases de Données}
+{\LaTeXraggedright
+\cvtag{MySQL}
+\cvtag{PostgreSQL}
+\cvtag{MongoDB}
+\cvtag{Redis}
+\cvtag{Oracle}
+\par}
+
+\cvsection{Soft Skills}
+{\LaTeXraggedright
+\cvtag{Résolution de problèmes}
+\cvtag{Travail d'équipe}
+\cvtag{Communication}
+\cvtag{Adaptabilité}
+\cvtag{Gestion du temps}
+\par}
+
+\cvsection{Formation}
+
+\cvevent{Diplôme d'Ingénieur en Génie Logiciel}{Faculté des Sciences et Techniques de Mohammedia}{2022 -- Présent}{}
+
+\divider
+
+\cvevent{CPGE Technologies Industrielles}{Lycée Technique Mohammed V}{2019 -- 2021}{}
+
+\end{paracol}
+
+\end{document}
