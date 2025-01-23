@@ -1,14 +1,31 @@
 export const translations = {
   en: {
     downloadCV: "Download CV",
+    location: {
+      city: "Mohammedia",
+      country: "Morocco"
+    },
+    hiThere: "Hi there! 👋",
+    notifications: {
+      emailCopied: "✉️ Email Copied Successfully!",
+      phoneCopied: "📱 Phone Number Copied Successfully!",
+      cvDownloaded: "📄 CV Downloaded Successfully!",
+      copyError: "❌ Failed to copy. Please try again.",
+      downloadError: "❌ Download failed. Please try again or contact me for the CV."
+    },
     buttons: {
       switchToFrench: "Switch to French",
       switchToEnglish: "Switch to English"
     },
     sections: {
       skills: {
-        title: "Skills",
-        subtitle: "Technologies and tools I work with"
+        title: "Skills & Competencies",
+        subtitle: "A comprehensive overview of my technical and soft skills",
+        languages: "Programming Languages",
+        frameworks: "Frameworks & Libraries",
+        databases: "Databases",
+        tools: "Tools & Technologies",
+        softSkills: "Soft Skills"
       },
       experience: {
         title: "Experience",
@@ -26,6 +43,18 @@ export const translations = {
   },
   fr: {
     downloadCV: "Télécharger CV",
+    location: {
+      city: "Mohammedia",
+      country: "Maroc"
+    },
+    hiThere: "Salut! 👋",
+    notifications: {
+      emailCopied: "✉️ Email copié avec succès !",
+      phoneCopied: "📱 Numéro de téléphone copié avec succès !",
+      cvDownloaded: "📄 CV téléchargé avec succès !",
+      copyError: "❌ Échec de la copie. Veuillez réessayer.",
+      downloadError: "❌ Échec du téléchargement. Veuillez réessayer ou me contacter pour le CV."
+    },
     buttons: {
       switchToFrench: "Passer en français",
       switchToEnglish: "Passer en anglais"
@@ -33,7 +62,12 @@ export const translations = {
     sections: {
       skills: {
         title: "Compétences",
-        subtitle: "Technologies et outils avec lesquels je travaille"
+        subtitle: "Un aperçu complet de mes compétences techniques et interpersonnelles",
+        languages: "Langages de programmation",
+        frameworks: "Frameworks & Bibliothèques",
+        databases: "Bases de données",
+        tools: "Outils & Technologies",
+        softSkills: "Compétences interpersonnelles"
       },
       experience: {
         title: "Expérience",

@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { Briefcase } from "lucide-react";
 import { translations } from "@/data/translations";
+import { ScrollAnimation } from "./ScrollAnimation";
 
 const Experience = memo(() => {
   const currentLanguage = useSelector(
@@ -15,42 +16,44 @@ const Experience = memo(() => {
   const t = translations[currentLanguage];
 
   return (
-    <section className="py-20 px-4 bg-[#FEF7CD]/30">
-      <div className="max-w-3xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">{t.sections.experience.title}</h2>
+    <section className="py-20 px-4 w-full bg-[#D3E4FD]/30 dark:bg-[#111111]">
+      <ScrollAnimation className="max-w-3xl mx-auto">
+      <div className="text-center mb-12">
+      <div className="flex items-center justify-center gap-2 mb-4">
+      <Briefcase className="w-8 h-8 text-primary-foreground" />
+          <h2 className="text-3xl font-bold">{t.sections.experience.title}</h2>
+          </div>
           <p className="text-muted-foreground">{t.sections.experience.subtitle}</p>
         </div>
         <div className="space-y-6">
           {experiences.map((exp, index) => (
-            <Card key={index} className="relative border-primary/20">
-              <div className="absolute -left-3 top-6 w-6 h-6 bg-primary rounded-full flex items-center justify-center">
-                <Briefcase className="w-4 h-4 text-primary-foreground" />
-              </div>
-              <CardHeader>
-                <CardTitle className="text-primary">{exp.poste}</CardTitle>
-                <div className="text-sm text-muted-foreground">
-                  {exp.entreprise} | {exp.date}
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="mb-4 text-muted-foreground">{exp.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {exp.techs.map((tech) => (
-                    <Badge
-                      key={tech}
-                      variant="secondary"
-                      className="bg-[#E5DEFF] hover:bg-primary text-primary hover:text-white"
-                    >
-                      {tech}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+            <ScrollAnimation key={index}>
+              <Card className="relative border-primary/20 h-full flex flex-col">
+                <CardHeader>
+                  <CardTitle className="text-primary">{exp.poste}</CardTitle>
+                  <div className="text-sm text-muted-foreground">
+                    {exp.entreprise} | {exp.date}
+                  </div>
+                </CardHeader>
+                <CardContent className="flex flex-col flex-grow">
+                  <p className="mb-4 text-muted-foreground">{exp.description}</p>
+                  <div className="flex flex-wrap gap-2 mt-auto">
+                    {exp.techs.map((tech) => (
+                      <Badge
+                        key={tech}
+                        variant="secondary"
+                        className="bg-[#E5DEFF] hover:bg-primary text-primary hover:text-white"
+                      >
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </ScrollAnimation>
           ))}
         </div>
-      </div>
+      </ScrollAnimation>
     </section>
   );
 });
