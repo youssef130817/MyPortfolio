@@ -1,6 +1,10 @@
 export const translations = {
   en: {
     downloadCV: "Download CV",
+    buttons: {
+      switchToFrench: "Switch to French",
+      switchToEnglish: "Switch to English"
+    },
     sections: {
       skills: {
         title: "Skills",
@@ -22,6 +26,10 @@ export const translations = {
   },
   fr: {
     downloadCV: "Télécharger CV",
+    buttons: {
+      switchToFrench: "Passer en français",
+      switchToEnglish: "Passer en anglais"
+    },
     sections: {
       skills: {
         title: "Compétences",
