@@ -89,16 +89,13 @@ const Hero = memo(() => {
   const handleDownloadCV = async (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
     try {
-      const response = await fetch('/CV.pdf');
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
+      const cvUrl = `${import.meta.env.BASE_URL}Kassimi Youssef.pdf`;
       const link = document.createElement('a');
-      link.href = url;
-      link.download = 'CV.pdf';
+      link.href = cvUrl;
+      link.download = 'Kassimi Youssef.pdf';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-      window.URL.revokeObjectURL(url);
       
       toast.success(t.notifications.cvDownloaded, {
         position: "bottom-right",
@@ -147,7 +144,7 @@ const Hero = memo(() => {
           <div className="flex items-center justify-center gap-6 mb-6">
             <div className="relative w-32 h-32 rounded-full overflow-hidden ring-4 ring-primary/20 transition-transform duration-300 hover:scale-125 cursor-pointer">
               <img
-                src={`${import.meta.env.BASE_URL}profile.jpg`}
+                src={`${import.meta.env.BASE_URL}Kassimi Youssef.jpg`}
                 alt="Profile"
                 className="w-full h-full object-cover object-top"
               />
